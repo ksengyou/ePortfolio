@@ -16,9 +16,11 @@ This will include the following:
 
 This ePortfolio was created as part of my Computer Science capstone at Southern New Hampshire University. 
 
-Prior to this capstone I did not have much experience with any of the elements included with the enhancements. The Computer Science program at Southern New Hampshire University has provided me with the tools and confidence to tackle the enhancements that I have chosen to implement. With this confidence I was happy to take on these new challenges and become acquainted with the new technologies such as implementing a GUI by way of JFrames, authentication of user credentials against MD5 hashes available from my database, and implementing a PostgreSQL database to read from. 
+Prior to this capstone I did not have much experience with any of the elements included with the enhancements. The Computer Science program at Southern New Hampshire University has provided me with the tools and confidence to tackle the enhancements that I have chosen to implement. With this confidence I was happy to take on these new challenges and become acquainted with the new technologies such as implementing a GUI by way of JFrames, authentication of user credentials against MD5 hashes available from my database, and implementing a PostgreSQL database to read from. These enhancements come together to create a more cohesive application that an end user would be more comfortable using, rather than interacting through a console.
 
 As demonstrated through this ePortfolio, the application was morphed from one that made use of console input/output and credentials saved to a text file to one that is more aesthetically appealing and makes use of a database to more securely store user credentials and information. 
+
+Throughout my career at Southern New Hampshire University I have had the opportunity hone my skills to further myself as a developer. I have been able to collaborate on fulfilling projects such as a jukebox application between an entire class, learned new technologies in respect to data structures and algorithms, implement my own databases, and obtained techniques to be able to successfully test my own as well as others' applications to ensure quality.
 
 ## Initial Code Review and Incoming Enhancements
 
