@@ -103,7 +103,3 @@ This has been updated in the new application as a connection to the database and
 ###### The application is able to read from the database successfully and check against the user and password hashes to verify the user and print the corresponding role:
 
 <img src="PSQLRead.png" alt="hi" class="inline"/>
-
-###### Failed login:
-
-<img src="FailedLogin.png" alt="hi" class="inline"/>
