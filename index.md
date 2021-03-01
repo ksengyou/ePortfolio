@@ -24,11 +24,12 @@ As demonstrated through this ePortfolio, the application was morphed from one th
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GF4T9qjylZo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 ## Artifacts and Enhancements:
 
 #### Software Design and Engineering: Update of GUI
 
-The first enhancement as a part of my ePortfolio is the update the interface that the user will encounter. Originally, this interface took the form of text in the console view. An example of this can be found below: 
+The first enhancement as a part of my ePortfolio is to update the interface that the user will encounter. Originally, this interface took the form of text in the console view. This was the first enhancement that came to mind as I believed that the console did not provide adequate value and needed an overhaul. In implementing the enhancement I first had trouble with formatting and obtaining the look that I was aiming for with my JFrame. Thanks to finding JPanels I was able to create a GUI that I was happy with. An example of this can be found below: 
 
 <img src="OldGUI.png" alt="hi" class="inline"/>
 
@@ -45,13 +46,13 @@ The prepareGUI() and createPanel(); methods are called from the default construc
 
 <img src="MethodCalls.png" alt="hi" class="inline"/>
 
-###### This results in the following GUI:
+This results in the following GUI:
  
 <img src="GUI.png" alt="hi" class="inline"/>
 
 #### Algorithm and Data Structures: Authenticating Users Through MD5 With Database
 
-My second enhancement as a part of my ePortfolio is to update the algorithms for checking the username and password. While the process will remain relatively the same, the difference will be that the code will not longer reference a file and be done through console, but will implement the use of a database as well as trigger through a GUI rather than entering values through console. 
+My second enhancement as a part of my ePortfolio is to update the algorithms for checking the username and password. While the process will remain relatively the same, the difference will be that the code will not longer reference a file and be done through console, but will implement the use of a database as well as trigger through a GUI rather than entering values through console. Initially, I struggled with figuring out how I wanted to implement the check against credentials as I knew I wanted to check against the database. I got through this by hardcoding credentials for testing until the database had been created and populated. This later served as a means to troubleshoot the code and ensure that the matches to the MD5 were working correctly. I had also run into a number of bugs with the actionListener triggering the method and had some issues debugging, but ultimately found that exceptions were not being handled correctly and throwing errors.
 
 The old version of the code made use of a scanner and file input stream to read the user input as well as read the credentials file:
 
@@ -72,23 +73,23 @@ Once the actionListener is triggered by use of the ‘enter’ button, these met
 
 The application will then read credentials from the database and check hashes against the database. The statusLabel will also update with the role information that is stored in the database. 
 
-###### Matching username/password:
+Matching username/password:
 
 <img src="LoginSuccess.png" alt="hi" class="inline"/>
 
-###### Invalid username/password:
+Invalid username/password:
 
 <img src="LoginFail.png" alt="hi" class="inline"/>
 
 #### Database: Implementation of PostgreSQL database
 
-My third enhancement as a part of my ePortfolio is to implement a database that will store the credentials for users to verify against. Prior to the database, the application read from a credentials text file to verify the users’ username, hash, password, and role. This has all been updated to be stored in a PostgreSQL database. 
+My third enhancement as a part of my ePortfolio is to implement a database that will store the credentials for users to verify against. Before working through this capstone, I had never connected a PostgreSQL database to an application. This itself posed a challenge to me. In this enhancement I would create the database, host it on my machine, and create the connections between the application and database. I believed this would be the right path as it would be more secure to the initial method. Prior to the database, the application read from a credentials text file to verify the users’ username, hash, password, and role. This has all been updated to be stored in a PostgreSQL database. 
 
-###### The old text file:
+The old text file:
 
 <img src="CredentialsFile.png" alt="hi" class="inline"/>
 
-###### The newly created table in the database:
+The newly created table in the database:
 
 <img src="PSQLTable.png" alt="hi" class="inline"/>
 
@@ -100,6 +101,6 @@ This has been updated in the new application as a connection to the database and
 
 <img src="PSQLReadCode.png" alt="hi" class="inline"/>
 
-###### The application is able to read from the database successfully and check against the user and password hashes to verify the user and print the corresponding role:
+The application is able to read from the database successfully and check against the user and password hashes to verify the user and print the corresponding role:
 
 <img src="PSQLRead.png" alt="hi" class="inline"/>
