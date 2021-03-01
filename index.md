@@ -1,6 +1,6 @@
 # Hello, and welcome to my ePortfolio.
 
-This ePortfolio will outline my process of converting an older project for a zoo authentication system and the enhancements that follow. 
+My name is Kevin Seng. This ePortfolio will outline my process of converting an older project for a zoo authentication system and the enhancements that follow. 
 
 This will include the following:
 
